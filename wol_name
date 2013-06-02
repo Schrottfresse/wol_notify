@@ -1,3 +1,4 @@
 #!/bin/bash
-notify-send -i /usr/share/icons/default.kde4/48x48/status/dialog-information.png "Wake on LAN" "[Name] hat seinen Rechner angeschaltet."
+#notify-send -i /usr/share/icons/default.kde4/48x48/status/dialog-information.png "Wake on LAN" "[Name] hat seinen Rechner angeschaltet."
+DISPLAY=:0 xmessage -buttons "OK:0" -default OK "$(whoami) hat seinen PC gestartet"
 wol [MAC-Adresse]
